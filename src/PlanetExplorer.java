@@ -88,7 +88,7 @@ public class PlanetExplorer {
 		
 		
 		
-		result = "(" + String.valueOf(pos_x) + "," + String.valueOf(pos_y) + facing + ")" + obs ;
+		result = "(" + String.valueOf(pos_x) + "," + String.valueOf(pos_y) + "," + facing + ")" + obs ;
 		return result;
 	}
 	
