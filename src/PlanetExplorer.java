@@ -45,7 +45,6 @@ public class PlanetExplorer {
 				throw new PlanetExplorerException();
 		}
 		obstacle.put(obstacles.substring(LeftPosition, RightPosition+1), false);
-		
 	}
 	
 	public String executeCommand(String command){
