@@ -93,7 +93,7 @@ public class PlanetExplorer {
 	}
 	
 	private boolean check(char ch) {
-		if( ch!='f' || ch!='b' || ch!='l' || ch!='r')
+		if( ch!='f' && ch!='b' && ch!='l' && ch!='r')
 			return false;
 		return true;
 	}
