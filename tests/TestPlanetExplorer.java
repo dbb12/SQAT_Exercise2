@@ -73,21 +73,21 @@ public class TestPlanetExplorer {
 	// Tests For executeCommand(String command)
 	@Test
 	public void test_executeCommand_command_initial_face_N() throws PlanetExplorerException {
-		PlanetExplorer explorer = new PlanetExplorer(100,100,"(120,5)(7,8)(20,4)(44,98)");
+		PlanetExplorer explorer = new PlanetExplorer(100,100,"(5,5)(7,8)(20,4)(44,98)");
 		String result = explorer.executeCommand("");
 		assertEquals("(0,0,N)",result);
 	}
 	
 	@Test
 	public void test_executeCommand_command_l_face_W() throws PlanetExplorerException {
-		PlanetExplorer explorer = new PlanetExplorer(100,100,"(120,5)(7,8)(20,4)(44,98)");
+		PlanetExplorer explorer = new PlanetExplorer(100,100,"(5,5)(7,8)(20,4)(44,98)");
 		String result = explorer.executeCommand("l");
 		assertEquals("(0,0,W)",result);
 	}
 	
 	@Test
 	public void test_executeCommand_command_r_face_W() throws PlanetExplorerException {
-		PlanetExplorer explorer = new PlanetExplorer(100,100,"(120,5)(7,8)(20,4)(44,98)");
+		PlanetExplorer explorer = new PlanetExplorer(100,100,"(5,5)(7,8)(20,4)(44,98)");
 		String result = explorer.executeCommand("r");
 		assertEquals("(0,0,E)",result);
 	}

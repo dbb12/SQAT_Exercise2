@@ -139,3 +139,6 @@ RefactoringAction 1477054529866 TestPlanetExplorer.java ADD void test_executeCom
 RefactoringAction 1477054540693 TestPlanetExplorer.java RENAME test_executeCommand_command_l_face_W()/2=>void test_executeCommand_command_r_face_W() METHOD
 RefactoringAction 1477054561956 PlanetExplorer.java REMOVE getFacing(char, String) METHOD
 EditAction 1477054830557 PlanetExplorer.java 4352 5 21 0
+UnitTestCaseAction 1477054834429 TestPlanetExplorer.java FAIL
+UnitTestSessionAction 1477054834429 TestPlanetExplorer.java FAIL
+EditAction 1477054856206 TestPlanetExplorer.java 3992 13 27 7
