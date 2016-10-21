@@ -28,6 +28,7 @@ public class PlanetExplorer {
 		while( RightPosition!=-1 && RightPosition<obstacles.length() )
 		{
 			RightPosition = obstacles.indexOf(")(");
+			int DotPosition = obstacles.indexOf(","); // record the index of ","
 			if( RightPosition==-1 )
 				break;
 			for( int i=LeftPosition+1 ; i<RightPosition ; ++i )
@@ -35,6 +36,10 @@ public class PlanetExplorer {
 				if( !( (obstacles.charAt(i)<='9' && obstacles.charAt(i)>='0') || obstacles.charAt(i)== ',') )
 					throw new PlanetExplorerException();
 			}
+			int TempX = Integer.parseInt(obstacles.substring(0, DotPosition+1 ));
+			int TempY = Integer.parseInt(obstacles.substring(DotPosition, RightPosition+1 ));
+			if( TempX>x || TempY>y )
+				throw new PlanetExplorerException();
 			obstacle.put(obstacles.substring(LeftPosition, RightPosition+1), false);
 			obstacles = obstacles.replace(obstacles.substring(LeftPosition, RightPosition+1 ),"");
 			LeftPosition = 0;

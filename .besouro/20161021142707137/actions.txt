@@ -87,3 +87,4 @@ RefactoringAction 1477052599928 TestPlanetExplorer.java RENAME test_PlanetExplor
 RefactoringAction 1477052600973 TestPlanetExplorer.java RENAME test_PlanetExplorer_constructor_XisGreaterThan100_throw()=>void test_PlanetExplorer_constructor_XisGreaterThan100_throw_() METHOD
 RefactoringAction 1477052607182 TestPlanetExplorer.java RENAME test_PlanetExplorer_constructor_XisGreaterThan100_throw_()=>void test_PlanetExplorer_constructor_XisGreaterThan100_throw_PlanetExplorerException() METHOD
 EditAction 1477052630722 TestPlanetExplorer.java 3047 10 18 4
+EditAction 1477052641003 PlanetExplorer.java 3037 2 9 0
