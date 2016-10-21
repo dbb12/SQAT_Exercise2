@@ -1,0 +1,34 @@
+FileOpenedAction 1477049227387 PlanetExplorer.java 1270 2 1 0
+FileOpenedAction 1477049307976 PlanetExplorerException.java 61 0 0 0
+RefactoringAction 1477050050248 PlanetExplorer.java ADD HashMap<String,Boolean> obstacle FIELD
+RefactoringAction 1477050063361 PlanetExplorer.java RENAME PlanetExplorer(int, int, String)=>int x FIELD
+RefactoringAction 1477050066770 PlanetExplorer.java ADD import java.util.HashMap IMPORT
+RefactoringAction 1477050146962 PlanetExplorer.java ADD int x FIELD
+RefactoringAction 1477050150994 PlanetExplorer.java REMOVE x FIELD
+RefactoringAction 1477050157042 PlanetExplorer.java ADD int x FIELD
+RefactoringAction 1477050158568 PlanetExplorer.java ADD int y FIELD
+RefactoringAction 1477050343717 TestPlanetExplorer.java RENAME test_executeCommand()=>void test_() METHOD
+RefactoringAction 1477050354229 TestPlanetExplorer.java RENAME test_()=>void test_PlanetExplorer() METHOD
+RefactoringAction 1477050355738 TestPlanetExplorer.java RENAME test_PlanetExplorer()=>void test_PlanetExplorer_() METHOD
+RefactoringAction 1477050358250 TestPlanetExplorer.java RENAME test_PlanetExplorer_()=>void test_PlanetExplorer_construc() METHOD
+RefactoringAction 1477050361272 TestPlanetExplorer.java RENAME test_PlanetExplorer_construc()=>void test_PlanetExplorer_constructor() METHOD
+RefactoringAction 1477050364285 TestPlanetExplorer.java RENAME test_PlanetExplorer_constructor()=>void test_PlanetExplorer_construct() METHOD
+RefactoringAction 1477050365798 TestPlanetExplorer.java RENAME test_PlanetExplorer_construct()=>void test_PlanetExplorer_constructor() METHOD
+RefactoringAction 1477050387846 TestPlanetExplorer.java RENAME test_PlanetExplorer_constructor()=>void test_PlanetExplorer_constructor_() METHOD
+RefactoringAction 1477050392358 TestPlanetExplorer.java RENAME test_PlanetExplorer_constructor_()=>void test_PlanetExplorer_constructor_first() METHOD
+RefactoringAction 1477050393869 TestPlanetExplorer.java RENAME test_PlanetExplorer_constructor_first()=>void test_PlanetExplorer_constructor_() METHOD
+RefactoringAction 1477050408891 TestPlanetExplorer.java RENAME test_PlanetExplorer_constructor_()=>void test_PlanetExplorer_constructor_return() METHOD
+RefactoringAction 1477050410906 TestPlanetExplorer.java RENAME test_PlanetExplorer_constructor_return()=>void test_PlanetExplorer_constructor_return_2() METHOD
+RefactoringAction 1477050496309 TestPlanetExplorer.java RENAME test_PlanetExplorer_constructor_return_2()=>void test_PlanetExplorer_constructor_2() METHOD
+RefactoringAction 1477050501328 TestPlanetExplorer.java RENAME test_PlanetExplorer_constructor_2()=>void test_PlanetExplorer_constructor_2_obstacles() METHOD
+RefactoringAction 1477050512846 TestPlanetExplorer.java ADD void test_PlanetExplorer_constructor_ FIELD
+RefactoringAction 1477050515368 TestPlanetExplorer.java RENAME test_PlanetExplorer_constructor_=>void test_PlanetExplorer_constructor_5_5_ FIELD
+RefactoringAction 1477050516387 TestPlanetExplorer.java RENAME test_PlanetExplorer_constructor_5_5_=>void test_PlanetExplorer_constructor_5_5_a FIELD
+RefactoringAction 1477050520903 TestPlanetExplorer.java RENAME test_PlanetExplorer_constructor_5_5_a=>void test_PlanetExplorer_constructor_5_5_explorer FIELD
+RefactoringAction 1477050522920 TestPlanetExplorer.java RENAME test_PlanetExplorer_constructor_5_5_explorer=>void test_PlanetExplorer_constructor_5_5_explorer() METHOD
+RefactoringAction 1477050611395 TestPlanetExplorer.java ADD void test_PlanetExporer_constructor_7_8 FIELD
+RefactoringAction 1477050613914 TestPlanetExplorer.java RENAME test_PlanetExporer_constructor_7_8=>void test_PlanetExporer_constructor_7_8_exporer FIELD
+RefactoringAction 1477050617934 TestPlanetExplorer.java RENAME test_PlanetExporer_constructor_7_8_exporer=>void test_PlanetExporer_constructor_7_8_explorer_true FIELD
+RefactoringAction 1477050621450 TestPlanetExplorer.java RENAME test_PlanetExplorer_constructor_5_5_explorer()=>void test_PlanetExplorer_constructor_5_5_explorer_true() METHOD
+RefactoringAction 1477050624969 TestPlanetExplorer.java RENAME test_PlanetExporer_constructor_7_8_explorer_true=>void test_PlanetExporer_constructor_7_8_explorer_true() METHOD
+EditAction 1477050634808 TestPlanetExplorer.java 992 3 9 3
