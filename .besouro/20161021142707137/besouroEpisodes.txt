@@ -45,3 +45,6 @@
 1477055095226 test-last 1 1563 false
 1477055095227 test-first 3 1563 true
 1477055095228 test-first 3 1563 true
+1477055142275 test-addition 1 25 true
+1477055142276 test-addition 1 25 true
+1477055142277 test-addition 1 25 true
