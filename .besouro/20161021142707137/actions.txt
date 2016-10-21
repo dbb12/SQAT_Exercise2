@@ -212,3 +212,6 @@ RefactoringAction 1477056530021 TestPlanetExplorer.java RENAME test_executeComma
 RefactoringAction 1477056532095 TestPlanetExplorer.java RENAME test_executeCommand_command_ffrflbb_face_E()=>void test_executeCommand_command_ffrflbbl_face_E() METHOD
 RefactoringAction 1477056534155 TestPlanetExplorer.java RENAME test_executeCommand_command_ffrflbbl_face_E()=>void test_executeCommand_command_ffrflbblf_face_E() METHOD
 EditAction 1477056544224 TestPlanetExplorer.java 5023 17 39 11
+UnitTestCaseAction 1477056546742 TestPlanetExplorer.java OK
+UnitTestSessionAction 1477056546742 TestPlanetExplorer.java OK
+EditAction 1477056578427 TestPlanetExplorer.java 5030 17 39 11
