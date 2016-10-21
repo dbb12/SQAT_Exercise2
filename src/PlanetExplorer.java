@@ -10,7 +10,7 @@ public class PlanetExplorer {
 	public HashMap<String,Boolean> obstacle = new HashMap<String,Boolean>();
 	public int x, y;
 	
-	public PlanetExplorer(int x, int y, String obstacles){
+	public PlanetExplorer(int x, int y, String obstacles) throws PlanetExplorerException {
 	/*	x and y represent the size of the grid.
 	 *  Obstacles is a String formatted as follows: "(obs1_x,obs1_y)(obs2_x,obs2_y)...(obsN_x,obsN_y)" with no white spaces. 
 	 *  
@@ -20,9 +20,32 @@ public class PlanetExplorer {
 	 */
 		this.x = x;
 		this.y = y;
-		int LeftPosition = 0, RightPosition = 0; // LeftPosition:   record the index of '(' in the String - obstacles
-										     // RightPosition:  record the index of ')' in the String - obstacles
-
+		int LeftPosition = 0,   // LeftPosition:   record the index of '(' in the String - obstacles
+			RightPosition = 0;  // RightPosition:  record the index of ')' in the String - obstacles		         
+		if( !obstacles.startsWith("(") || !obstacles.endsWith(")") || x<1 || y<1 )
+			throw new PlanetExplorerException();
+		// put all the obstacles into the HashMap<String,Boolean> obstacle.
+		while( RightPosition<obstacles.length() )
+		{
+			RightPosition = obstacles.indexOf(")(");
+			for( int i=LeftPosition+1 ; i<RightPosition ; ++i )
+			{
+				if( !(obstacles.charAt(i)<='9' && obstacles.charAt(i)>='0' || obstacles.charAt(i)== ',') )
+					throw new PlanetExplorerException();
+			}
+			obstacle.put(obstacles.substring(LeftPosition, RightPosition+1), false);
+			obstacles.replace(obstacles.substring(LeftPosition, RightPosition+1 ),"");
+			LeftPosition = RightPosition + 1;
+		}
+		// to deal with the last obstacle
+		RightPosition = obstacles.length() - 1;
+		for( int i=LeftPosition+1 ; i<RightPosition ; ++i )
+		{
+			if( !(obstacles.charAt(i)<='9' && obstacles.charAt(i)>='0' || obstacles.charAt(i)== ',') )
+				throw new PlanetExplorerException();
+		}
+		obstacle.put(obstacles.substring(LeftPosition, RightPosition+1), false);
+		
 	}
 	
 	public String executeCommand(String command){

@@ -27,4 +27,5 @@ public class TestPlanetExplorer {
 		boolean check = explorer.obstacle.containsKey("(7,8)");
 		assertTrue(check);
 	}
+	
 }
