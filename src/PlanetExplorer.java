@@ -32,12 +32,12 @@ public class PlanetExplorer {
 				break;
 			for( int i=LeftPosition+1 ; i<RightPosition ; ++i )
 			{
-				if( !(obstacles.charAt(i)<='9' && obstacles.charAt(i)>='0' || obstacles.charAt(i)== ',') )
+				if( !( (obstacles.charAt(i)<='9' && obstacles.charAt(i)>='0') || obstacles.charAt(i)== ',') )
 					throw new PlanetExplorerException();
 			}
 			obstacle.put(obstacles.substring(LeftPosition, RightPosition+1), false);
 			obstacles.replace(obstacles.substring(LeftPosition, RightPosition+1 ),"");
-			LeftPosition = RightPosition + 1;
+			LeftPosition = 0;
 		}
 		// to deal with the last obstacle
 		RightPosition = obstacles.length() - 1;
