@@ -78,7 +78,7 @@ public class PlanetExplorer {
 			case 'r' :  // Do not move. Turn right.
 				facing = int_to_facing( ((facing_to_int(facing) + 1))%4 ); break;
 			case 'l' :  // Do not move. Turn left.
-				facing = int_to_facing( ((facing_to_int(facing) - 1))%4 );break;
+				facing = int_to_facing( ((facing_to_int(facing) + 3))%4 );break;
 			case 'f' :  // Do not turn. Move forward.
 				          
 			case 'b' :  // Do not turn. Move backward.
@@ -98,7 +98,7 @@ public class PlanetExplorer {
 		return true;
 	}
 	
-	private int facing_to_int (String facing) {
+	private int facing_to_int (String facing) throws PlanetExplorerException {
 		switch( facing )
 		{
 		case "N" : return 0;
@@ -106,10 +106,10 @@ public class PlanetExplorer {
 		case "S" : return 2;
 		case "W" : return 3;
 		}
-		return -1;
+		throw new PlanetExplorerException();
 	}
 	
-	private String int_to_facing ( int f) {
+	private String int_to_facing ( int f) throws PlanetExplorerException {
 		switch( f )
 		{
 		case 0: return "N";
@@ -117,7 +117,7 @@ public class PlanetExplorer {
 		case 2: return "S";
 		case 3: return "W";
 		}
-		return null;
+		throw new PlanetExplorerException();
 	}
 	
 	
