@@ -2,7 +2,7 @@ import java.util.HashMap;
 
 // Before submitting write your ID and finish time here. Your ID is written on project description sheets.
 // ID:164
-// Finish time:
+// Finish time: 16:29
 
 
 public class PlanetExplorer {
