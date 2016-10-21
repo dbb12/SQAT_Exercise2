@@ -19,3 +19,5 @@
 1477052229403 test-last 1 3001 false
 1477052229404 test-first 2 3001 true
 1477052229405 test-first 2 3001 true
+1477052383524 test-addition 1 103 true
+1477052383525 test-addition 1 103 true

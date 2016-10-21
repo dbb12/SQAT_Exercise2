@@ -31,36 +31,26 @@ public class TestPlanetExplorer {
 	@Test( expected = PlanetExplorerException.class )
 	public void test_PlanetExplorer_constructor_withoutleft_throw_PlanetExplorerException() throws PlanetExplorerException {
 		PlanetExplorer explorer = new PlanetExplorer(100,100,"5,5)(7,8)");
-		boolean check = explorer.obstacle.containsKey("(7,8)");
-		assertTrue(check);
 	}
 	
 	@Test( expected = PlanetExplorerException.class )
 	public void test_PlanetExplorer_constructor_throw_withoutright_PlanetExplorerException() throws PlanetExplorerException {
 		PlanetExplorer explorer = new PlanetExplorer(100,100,"(5,5)(7,8");
-		boolean check = explorer.obstacle.containsKey("(7,8)");
-		assertTrue(check);
 	}
 	
 	@Test( expected = PlanetExplorerException.class )
 	public void test_PlanetExplorer_constructor_ContainOtherCharacter_throw_PlanetExplorerException() throws PlanetExplorerException {
 		PlanetExplorer explorer = new PlanetExplorer(100,100,"(5,.5)(7,8)");
-		boolean check = explorer.obstacle.containsKey("(7,8)");
-		assertTrue(check);
 	}
 	
 	@Test( expected = PlanetExplorerException.class )
 	public void test_PlanetExplorer_constructor_XisLessThan1_throw_PlanetExplorerException() throws PlanetExplorerException {
 		PlanetExplorer explorer = new PlanetExplorer(0,100,"(5,5)(7,8)");
-		boolean check = explorer.obstacle.containsKey("(7,8)");
-		assertTrue(check);
 	}
 	
 	@Test( expected = PlanetExplorerException.class )
 	public void test_PlanetExplorer_constructor_YisLessThan1_throw_PlanetExplorerException() throws PlanetExplorerException {
 		PlanetExplorer explorer = new PlanetExplorer(100,0,"(5,5)(7,8)");
-		boolean check = explorer.obstacle.containsKey("(7,8)");
-		assertTrue(check);
 	}
 	
 	@Test
@@ -69,5 +59,11 @@ public class TestPlanetExplorer {
 		PlanetExplorer explorer = new PlanetExplorer(100,100,"(5,5)(7,8)(20,4)(44,98)");
 		int NumberOfExplorer = explorer.obstacle.size();
 		assertEquals(4,NumberOfExplorer);
+	}
+	
+	@Test( expected = PlanetExplorerException.class )
+	// PlanetExplorer explorer = new PlanetExplorer(100,100,"(120,5)(7,8)(20,4)(44,98)")
+	public void test_PlanetExplorer_constructor_XisGreaterThan100_throw_PlanetExplorerException() throws PlanetExplorerException {
+		PlanetExplorer explorer = new PlanetExplorer(100,100,"(120,5)(7,8)(20,4)(44,98)");
 	}
 }
