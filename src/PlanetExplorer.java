@@ -82,7 +82,13 @@ public class PlanetExplorer {
 			case 'f' :  // Do not turn. Move forward.
 			{
 				Integer temp_x = pos_x, temp_y = pos_y;
-				get_next_pos(temp_x, temp_y, facing);
+				switch( facing )
+				{
+				case "N" : temp_y = (temp_y + 1) % y; break;
+				case "E" : temp_x = (temp_x + 1) % x; break;
+				case "S" : temp_y = (temp_y + y - 1) % y; break;
+				case "W" : temp_x = (temp_x + x -1 ) % x; break;
+				}
 				if( obstacle.containsKey("(" + String.valueOf(temp_x) + "," + String.valueOf(temp_y) + ")" ) )
 				{
 					if( !obstacle.get("(" + String.valueOf(temp_x) + "," + String.valueOf(temp_y) + ")") )

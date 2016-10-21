@@ -183,3 +183,15 @@ EditAction 1477056133012 PlanetExplorer.java 5397 6 23 0
 UnitTestCaseAction 1477056136317 TestPlanetExplorer.java FAIL
 UnitTestSessionAction 1477056136317 TestPlanetExplorer.java FAIL
 EditAction 1477056147140 PlanetExplorer.java 5358 6 22 0
+UnitTestCaseAction 1477056149389 TestPlanetExplorer.java FAIL
+UnitTestSessionAction 1477056149389 TestPlanetExplorer.java FAIL
+UnitTestCaseAction 1477056261662 TestPlanetExplorer.java OK
+UnitTestSessionAction 1477056261662 TestPlanetExplorer.java OK
+RefactoringAction 1477056271055 PlanetExplorer.java REMOVE get_next_pos(Integer, Integer, String) METHOD
+RefactoringAction 1477056339963 TestPlanetExplorer.java ADD void test_executeCommand_command_ffrf_face_E()/2 METHOD
+RefactoringAction 1477056347176 TestPlanetExplorer.java RENAME test_executeCommand_command_ffrf_face_E()/2=>void test_executeCommand_command_ffrfl_face_E() METHOD
+RefactoringAction 1477056355402 TestPlanetExplorer.java RENAME test_executeCommand_command_ffrfl_face_E()=>void test_executeCommand_command_ffrflf_face_E() METHOD
+RefactoringAction 1477056360552 TestPlanetExplorer.java RENAME test_executeCommand_command_ffrflf_face_E()=>void test_executeCommand_command_ffrflffff_face_E() METHOD
+RefactoringAction 1477056363113 TestPlanetExplorer.java RENAME test_executeCommand_command_ffrflffff_face_E()=>void test_executeCommand_command_ffrflffffl_face_E() METHOD
+RefactoringAction 1477056372884 TestPlanetExplorer.java RENAME test_executeCommand_command_ffrflffffl_face_E()=>void test_executeCommand_command_ffrflfffflf_face_E() METHOD
+EditAction 1477056389767 TestPlanetExplorer.java 5034 17 39 11
