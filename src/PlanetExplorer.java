@@ -10,6 +10,7 @@ public class PlanetExplorer {
 	public HashMap<String,Boolean> obstacle = new HashMap<String,Boolean>();
 	public int x, y;
 	
+	
 	public PlanetExplorer(int x, int y, String obstacles) throws PlanetExplorerException {
 	/*	x and y represent the size of the grid.
 	 *  Obstacles is a String formatted as follows: "(obs1_x,obs1_y)(obs2_x,obs2_y)...(obsN_x,obsN_y)" with no white spaces. 
@@ -53,7 +54,7 @@ public class PlanetExplorer {
 		obstacle.put(obstacles.substring(LeftPosition, RightPosition+1), false);
 	}
 	
-	public String executeCommand(String command){
+	public String executeCommand(String command) throws PlanetExplorerException {
 		/* The command string is composed of "f" (forward), "b" (backward), "l" (left) and "r" (right)
 		 * Example: 
 		 * The explorer is on a 100x100 grid at location (0, 0) and facing NORTH. 
@@ -67,11 +68,69 @@ public class PlanetExplorer {
 		String facing = "N";
 		String result = null;
 		String obs = null;
-		
+		for( int i=0 ; i<command.length() ; ++i )
+		{
+			char cmd = command.charAt(i);
+			if ( !check(cmd) )
+				throw new PlanetExplorerException();
+			switch( cmd )
+			{
+			case 'r' :  // Do not move. Turn right.
+				facing = int_to_facing( ((facing_to_int(facing) + 1))%4 ); break;
+			case 'l' :  // Do not move. Turn left.
+				facing = int_to_facing( ((facing_to_int(facing) - 1))%4 );break;
+			case 'f' :  // Do not turn. Move forward.
+				          
+			case 'b' :  // Do not turn. Move backward.
+				
+			}
+		}
 		
 		
 		
 		result = "(" + String.valueOf(pos_x) + "," + String.valueOf(pos_y) + facing + ")" + obs ;
 		return result;
 	}
+	
+	private boolean check(char ch) {
+		if( ch!='f' || ch!='b' || ch!='l' || ch!='r')
+			return false;
+		return true;
+	}
+	
+	private int facing_to_int (String facing) {
+		switch( facing )
+		{
+		case "N" : return 0;
+		case "E" : return 1;
+		case "S" : return 2;
+		case "W" : return 3;
+		}
+		return -1;
+	}
+	
+	private String int_to_facing ( int f) {
+		switch( f )
+		{
+		case 0: return "N";
+		case 1: return "E";
+		case 2: return "S";
+		case 3: return "W";
+		}
+		return null;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }

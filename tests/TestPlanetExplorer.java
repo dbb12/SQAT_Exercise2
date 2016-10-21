@@ -4,6 +4,8 @@ import org.junit.Test;
 
 public class TestPlanetExplorer {
 
+	// Tests For PlanetExplorer Constructor
+	
 	@Test
 	// PlanetExplorer explorer = new PlanetExplorer(100,100,"(5,5)(7,8)")
 	public void test_PlanetExplorer_constructor_2_obstacles() throws PlanetExplorerException {
@@ -66,4 +68,59 @@ public class TestPlanetExplorer {
 	public void test_PlanetExplorer_constructor_XisGreaterThan100_throw_PlanetExplorerException() throws PlanetExplorerException {
 		PlanetExplorer explorer = new PlanetExplorer(100,100,"(120,5)(7,8)(20,4)(44,98)");
 	}
+	
+	
+	// Tests For executeCommand(String command)
+	@Test
+	public void test_executeCommand_command_initial_face_N() throws PlanetExplorerException {
+		PlanetExplorer explorer = new PlanetExplorer(100,100,"(120,5)(7,8)(20,4)(44,98)");
+		String result = explorer.executeCommand("");
+		assertEquals("(0,0,N)",result);
+	}
+	
+	@Test
+	public void test_executeCommand_command_l_face_W() throws PlanetExplorerException {
+		PlanetExplorer explorer = new PlanetExplorer(100,100,"(120,5)(7,8)(20,4)(44,98)");
+		String result = explorer.executeCommand("l");
+		assertEquals("(0,0,W)",result);
+	}
+	
+	@Test
+	public void test_executeCommand_command_r_face_W() throws PlanetExplorerException {
+		PlanetExplorer explorer = new PlanetExplorer(100,100,"(120,5)(7,8)(20,4)(44,98)");
+		String result = explorer.executeCommand("r");
+		assertEquals("(0,0,E)",result);
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
