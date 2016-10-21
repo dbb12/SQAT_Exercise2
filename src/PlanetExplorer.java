@@ -143,7 +143,6 @@ public class PlanetExplorer {
 		case "S" : temp_y = (temp_y + y - 1) % y; break;
 		case "W" : temp_x = (temp_x + x -1 ) % x; break;
 		}
-		throw new PlanetExplorerException();
 	}
 	
 	
