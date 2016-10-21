@@ -199,3 +199,8 @@ UnitTestCaseAction 1477056392172 TestPlanetExplorer.java FAIL
 UnitTestSessionAction 1477056392188 TestPlanetExplorer.java FAIL
 RefactoringAction 1477056405442 TestPlanetExplorer.java REMOVE test_executeCommand_command_ffrflfffflf_face_E() METHOD
 EditAction 1477056409755 TestPlanetExplorer.java 4773 16 36 10
+UnitTestCaseAction 1477056411950 TestPlanetExplorer.java FAIL
+UnitTestSessionAction 1477056411950 TestPlanetExplorer.java FAIL
+UnitTestCaseAction 1477056457969 TestPlanetExplorer.java OK
+UnitTestSessionAction 1477056457969 TestPlanetExplorer.java OK
+EditAction 1477056506263 PlanetExplorer.java 5989 5 21 0

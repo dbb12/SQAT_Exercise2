@@ -80,51 +80,51 @@ public class PlanetExplorer {
 			case 'l' :  // Do not move. Turn left.
 				facing = int_to_facing( ((facing_to_int(facing) + 3))%4 );break;
 			case 'f' :  // Do not turn. Move forward.
+			{
+				int temp_x = pos_x, temp_y = pos_y;
+				switch( facing )
 				{
-					int temp_x = pos_x, temp_y = pos_y;
-					switch( facing )
+				case "N" : temp_y = (temp_y + 1) % y; break;
+				case "E" : temp_x = (temp_x + 1) % x; break;
+				case "S" : temp_y = (temp_y + y - 1) % y; break;
+				case "W" : temp_x = (temp_x + x -1 ) % x; break;
+				}
+				if( obstacle.containsKey("(" + String.valueOf(temp_x) + "," + String.valueOf(temp_y) + ")" ) )
+				{
+					if( !obstacle.get("(" + String.valueOf(temp_x) + "," + String.valueOf(temp_y) + ")") )
 					{
-					case "N" : temp_y = (temp_y + 1) % y; break;
-					case "E" : temp_x = (temp_x + 1) % x; break;
-					case "S" : temp_y = (temp_y + y - 1) % y; break;
-					case "W" : temp_x = (temp_x + x -1 ) % x; break;
-					}
-					if( obstacle.containsKey("(" + String.valueOf(temp_x) + "," + String.valueOf(temp_y) + ")" ) )
-					{
-						if( !obstacle.get("(" + String.valueOf(temp_x) + "," + String.valueOf(temp_y) + ")") )
-						{
-							obs += "(" + String.valueOf(temp_x) + "," + String.valueOf(temp_y) + ")";
-							obstacle.put("(" + String.valueOf(temp_x) + "," + String.valueOf(temp_y) + ")", true);  // TODO: change the value
-						}
-					}
-					else
-					{
-						pos_x = temp_x;	 pos_y = temp_y;
+						obs += "(" + String.valueOf(temp_x) + "," + String.valueOf(temp_y) + ")";
+						obstacle.put("(" + String.valueOf(temp_x) + "," + String.valueOf(temp_y) + ")", true);  // TODO: change the value
 					}
 				}
+				else
+				{
+					pos_x = temp_x;	 pos_y = temp_y;
+				}
+			}break;
 			case 'b' :  // Do not turn. Move backward.
+			{
+				int temp_x = pos_x, temp_y = pos_y;
+				switch( facing )
 				{
-					int temp_x = pos_x, temp_y = pos_y;
-					switch( facing )
+				case "N" : temp_y = (temp_y + y - 1) % y; break;
+				case "E" : temp_x = (temp_x + x - 1) % x; break;
+				case "S" : temp_y = (temp_y + 1) % y; break;
+				case "W" : temp_x = (temp_x + 1 ) % x; break;
+				}
+				if( obstacle.containsKey("(" + String.valueOf(temp_x) + "," + String.valueOf(temp_y) + ")" ) )
+				{
+					if( !obstacle.get("(" + String.valueOf(temp_x) + "," + String.valueOf(temp_y) + ")") )
 					{
-					case "N" : temp_y = (temp_y + y - 1) % y; break;
-					case "E" : temp_x = (temp_x + x - 1) % x; break;
-					case "S" : temp_y = (temp_y + 1) % y; break;
-					case "W" : temp_x = (temp_x + 1) % x; break;
-					}
-					if( obstacle.containsKey("(" + String.valueOf(temp_x) + "," + String.valueOf(temp_y) + ")" ) )
-					{
-						if( !obstacle.get("(" + String.valueOf(temp_x) + "," + String.valueOf(temp_y) + ")") )
-						{
-							obs += "(" + String.valueOf(temp_x) + "," + String.valueOf(temp_y) + ")";
-							obstacle.put("(" + String.valueOf(temp_x) + "," + String.valueOf(temp_y) + ")", true);  // TODO: change the value
-						}
-					}
-					else
-					{
-						pos_x = temp_x;	 pos_y = temp_y;
+						obs += "(" + String.valueOf(temp_x) + "," + String.valueOf(temp_y) + ")";
+						obstacle.put("(" + String.valueOf(temp_x) + "," + String.valueOf(temp_y) + ")", true);  // TODO: change the value
 					}
 				}
+				else
+				{
+					pos_x = temp_x;	 pos_y = temp_y;
+				}
+			}break;	
 			}
 		}
 		
@@ -162,6 +162,7 @@ public class PlanetExplorer {
 		throw new PlanetExplorerException();
 	}
 	
+
 	
 	
 	

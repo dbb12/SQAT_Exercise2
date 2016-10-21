@@ -55,3 +55,9 @@
 1477056261665 test-first 3 233 true
 1477056261666 test-first 3 233 true
 1477056261667 test-first 3 233 true
+1477056457969 test-addition 2 186 true
+1477056457970 test-addition 2 186 true
+1477056457971 test-addition 1 186 true
+1477056457972 test-addition 2 186 true
+1477056457973 test-addition 2 186 true
+1477056457974 test-addition 1 186 true
