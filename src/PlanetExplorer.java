@@ -66,8 +66,8 @@ public class PlanetExplorer {
 		 */
 		int pos_x = 0, pos_y = 0; // coordinates of the position of the explorer
 		String facing = "N";
-		String result = null;
-		String obs = null;
+		String result = "";
+		String obs = "";
 		for( int i=0 ; i<command.length() ; ++i )
 		{
 			char cmd = command.charAt(i);
