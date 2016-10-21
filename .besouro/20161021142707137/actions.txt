@@ -64,3 +64,4 @@ RefactoringAction 1477051713622 TestPlanetExplorer.java RENAME test_PlanetExplor
 RefactoringAction 1477051722920 TestPlanetExplorer.java RENAME test_PlanetExplorer_constructor_throw_PlanetExplorerException()=>void test_PlanetExplorer_constructor_YisLessThan1_throw_PlanetExplorerException() METHOD
 CompilationAction 1477051732108 TestPlanetExplorer.java
 EditAction 1477051757146 PlanetExplorer.java 2680 2 9 0
+EditAction 1477051840139 PlanetExplorer.java 2739 2 9 0

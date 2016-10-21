@@ -25,9 +25,11 @@ public class PlanetExplorer {
 		if( !obstacles.startsWith("(") || !obstacles.endsWith(")") || x<1 || y<1 )
 			throw new PlanetExplorerException();
 		// put all the obstacles into the HashMap<String,Boolean> obstacle.
-		while( RightPosition<obstacles.length() )
+		while( RightPosition!=-1 && RightPosition<obstacles.length() )
 		{
 			RightPosition = obstacles.indexOf(")(");
+			if( RightPosition==-1 )
+				break;
 			for( int i=LeftPosition+1 ; i<RightPosition ; ++i )
 			{
 				if( !(obstacles.charAt(i)<='9' && obstacles.charAt(i)>='0' || obstacles.charAt(i)== ',') )
