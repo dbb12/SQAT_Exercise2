@@ -32,3 +32,5 @@ RefactoringAction 1477050617934 TestPlanetExplorer.java RENAME test_PlanetExpore
 RefactoringAction 1477050621450 TestPlanetExplorer.java RENAME test_PlanetExplorer_constructor_5_5_explorer()=>void test_PlanetExplorer_constructor_5_5_explorer_true() METHOD
 RefactoringAction 1477050624969 TestPlanetExplorer.java RENAME test_PlanetExporer_constructor_7_8_explorer_true=>void test_PlanetExporer_constructor_7_8_explorer_true() METHOD
 EditAction 1477050634808 TestPlanetExplorer.java 992 3 9 3
+CompilationAction 1477050636256 TestPlanetExplorer.java
+EditAction 1477050646381 PlanetExplorer.java 1621 2 4 0
