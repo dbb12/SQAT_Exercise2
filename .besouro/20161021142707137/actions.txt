@@ -94,3 +94,16 @@ EditAction 1477052700353 PlanetExplorer.java 3037 2 9 0
 UnitTestCaseAction 1477052702400 TestPlanetExplorer.java FAIL
 UnitTestSessionAction 1477052702400 TestPlanetExplorer.java FAIL
 EditAction 1477052722914 PlanetExplorer.java 3035 2 9 0
+UnitTestCaseAction 1477052725304 TestPlanetExplorer.java OK
+UnitTestSessionAction 1477052725304 TestPlanetExplorer.java OK
+RefactoringAction 1477053531747 TestPlanetExplorer.java ADD void test_PlanetExplo FIELD
+RefactoringAction 1477053535881 TestPlanetExplorer.java RENAME test_PlanetExplo=>void test_execute FIELD
+RefactoringAction 1477053538518 TestPlanetExplorer.java RENAME test_execute=>void test_executeCommand FIELD
+RefactoringAction 1477053539578 TestPlanetExplorer.java RENAME test_executeCommand=>void test_executeCommand_ FIELD
+RefactoringAction 1477053541154 TestPlanetExplorer.java RENAME test_executeCommand_=>void test_executeCommand_command FIELD
+RefactoringAction 1477053542199 TestPlanetExplorer.java RENAME test_executeCommand_command=>void test_executeCommand_command_ FIELD
+RefactoringAction 1477053546318 TestPlanetExplorer.java RENAME test_executeCommand_command_=>void test_executeCommand_command_l FIELD
+RefactoringAction 1477053554055 TestPlanetExplorer.java RENAME test_executeCommand_command_l=>void test_executeCommand_command_l_face_ FIELD
+RefactoringAction 1477053555631 TestPlanetExplorer.java RENAME test_executeCommand_command_l_face_=>void test_executeCommand_command_l_face_W FIELD
+RefactoringAction 1477053575786 TestPlanetExplorer.java RENAME test_executeCommand_command_l_face_W=>void test_executeCommand_command_l_face_W() METHOD
+EditAction 1477053839144 PlanetExplorer.java 3311 2 14 0
