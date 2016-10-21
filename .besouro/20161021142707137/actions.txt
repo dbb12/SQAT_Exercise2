@@ -171,3 +171,9 @@ RefactoringAction 1477055385261 PlanetExplorer.java RENAME get_next_pos(int, int
 RefactoringAction 1477055418255 PlanetExplorer.java RENAME get_next_pos(int, int, String)=>void get_next_pos(Integer, int, String) METHOD
 RefactoringAction 1477055421859 PlanetExplorer.java RENAME get_next_pos(Integer, int, String)=>void get_next_pos(Integer, Integer, String) METHOD
 EditAction 1477056013414 PlanetExplorer.java 5369 6 23 0
+UnitTestCaseAction 1477056015541 TestPlanetExplorer.java OK
+UnitTestSessionAction 1477056015541 TestPlanetExplorer.java OK
+RefactoringAction 1477056028171 TestPlanetExplorer.java ADD void test_executeCommand_command_rllr_face_W()/2 METHOD
+RefactoringAction 1477056056593 TestPlanetExplorer.java RENAME test_executeCommand_command_rllr_face_W()/2=>void test_executeCommand_command_ffrf_face_W() METHOD
+RefactoringAction 1477056061731 TestPlanetExplorer.java RENAME test_executeCommand_command_ffrf_face_W()=>void test_executeCommand_command_ffrf_face_E() METHOD
+EditAction 1477056067884 TestPlanetExplorer.java 4773 16 36 10
