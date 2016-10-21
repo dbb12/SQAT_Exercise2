@@ -36,7 +36,7 @@ public class PlanetExplorer {
 					throw new PlanetExplorerException();
 			}
 			obstacle.put(obstacles.substring(LeftPosition, RightPosition+1), false);
-			obstacles.replace(obstacles.substring(LeftPosition, RightPosition+1 ),"");
+			obstacles = obstacles.replace(obstacles.substring(LeftPosition, RightPosition+1 ),"");
 			LeftPosition = 0;
 		}
 		// to deal with the last obstacle
