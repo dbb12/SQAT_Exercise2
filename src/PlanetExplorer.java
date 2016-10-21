@@ -36,8 +36,8 @@ public class PlanetExplorer {
 				if( !( (obstacles.charAt(i)<='9' && obstacles.charAt(i)>='0') || obstacles.charAt(i)== ',') )
 					throw new PlanetExplorerException();
 			}
-			int TempX = Integer.parseInt(obstacles.substring(0, DotPosition ));
-			int TempY = Integer.parseInt(obstacles.substring(DotPosition+1, RightPosition+1 ));
+			int TempX = Integer.parseInt(obstacles.substring(1, DotPosition ));
+			int TempY = Integer.parseInt(obstacles.substring(DotPosition+1, RightPosition ));
 			if( TempX>x || TempY>y )
 				throw new PlanetExplorerException();
 			obstacle.put(obstacles.substring(LeftPosition, RightPosition+1), false);
