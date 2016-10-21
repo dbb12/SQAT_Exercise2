@@ -62,4 +62,12 @@ public class TestPlanetExplorer {
 		boolean check = explorer.obstacle.containsKey("(7,8)");
 		assertTrue(check);
 	}
+	
+	@Test
+	// PlanetExplorer explorer = new PlanetExplorer(100,100,"(5,5)(7,8)(20,4)(44,98)")
+	public void test_PlanetExplorer_constructor_4_obstacles() throws PlanetExplorerException {
+		PlanetExplorer explorer = new PlanetExplorer(100,100,"(5,5)(7,8)(20,4)(44,98)");
+		int NumberOfExplorer = explorer.obstacle.size();
+		assertEquals(4,NumberOfExplorer);
+	}
 }

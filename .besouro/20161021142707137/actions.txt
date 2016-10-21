@@ -67,3 +67,12 @@ EditAction 1477051757146 PlanetExplorer.java 2680 2 9 0
 EditAction 1477051840139 PlanetExplorer.java 2739 2 9 0
 EditAction 1477052132424 PlanetExplorer.java 2726 2 9 0
 EditAction 1477052227058 PlanetExplorer.java 2738 2 9 0
+UnitTestCaseAction 1477052229369 TestPlanetExplorer.java OK
+UnitTestSessionAction 1477052229385 TestPlanetExplorer.java OK
+RefactoringAction 1477052280444 TestPlanetExplorer.java ADD void test_PlanetExplorer_constructor_7_8_explorer_true()/2 METHOD
+RefactoringAction 1477052326370 TestPlanetExplorer.java RENAME test_PlanetExplorer_constructor_7_8_explorer_true()/2=>void test_PlanetExplorer_constructor_2_obstacles FIELD
+RefactoringAction 1477052331550 TestPlanetExplorer.java RENAME test_PlanetExplorer_constructor_2_obstacles()/2=>void test_PlanetExplorer_constructor_4_obstacles() METHOD
+RefactoringAction 1477052338772 TestPlanetExplorer.java RENAME test_PlanetExplorer_constructor_YisLessThan1_throw_PlanetExplorerException()=>publPlanetExplorer explorer FIELD
+RefactoringAction 1477052353234 TestPlanetExplorer.java RENAME test_PlanetExplorer_constructor_4_obstacles()=>void test_PlanetExplorer_constructor__obstacles() METHOD
+RefactoringAction 1477052357867 TestPlanetExplorer.java RENAME test_PlanetExplorer_constructor__obstacles()=>void test_PlanetExplorer_constructor_4_obstacles() METHOD
+EditAction 1477052381548 TestPlanetExplorer.java 3087 9 27 9
