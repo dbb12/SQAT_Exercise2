@@ -92,7 +92,19 @@ public class TestPlanetExplorer {
 		assertEquals("(0,0,E)",result);
 	}
 	
+	@Test
+	public void test_executeCommand_command_rrrr_face_W() throws PlanetExplorerException {
+		PlanetExplorer explorer = new PlanetExplorer(100,100,"(5,5)(7,8)(20,4)(44,98)");
+		String result = explorer.executeCommand("rrrr");
+		assertEquals("(0,0,N)",result);
+	}
 	
+	@Test
+	public void test_executeCommand_command_rllr_face_W() throws PlanetExplorerException {
+		PlanetExplorer explorer = new PlanetExplorer(100,100,"(5,5)(7,8)(20,4)(44,98)");
+		String result = explorer.executeCommand("rllr");
+		assertEquals("(0,0,N)",result);
+	}
 	
 	
 	
