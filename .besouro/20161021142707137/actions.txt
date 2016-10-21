@@ -177,3 +177,6 @@ RefactoringAction 1477056028171 TestPlanetExplorer.java ADD void test_executeCom
 RefactoringAction 1477056056593 TestPlanetExplorer.java RENAME test_executeCommand_command_rllr_face_W()/2=>void test_executeCommand_command_ffrf_face_W() METHOD
 RefactoringAction 1477056061731 TestPlanetExplorer.java RENAME test_executeCommand_command_ffrf_face_W()=>void test_executeCommand_command_ffrf_face_E() METHOD
 EditAction 1477056067884 TestPlanetExplorer.java 4773 16 36 10
+UnitTestCaseAction 1477056070261 TestPlanetExplorer.java FAIL
+UnitTestSessionAction 1477056070276 TestPlanetExplorer.java FAIL
+EditAction 1477056133012 PlanetExplorer.java 5397 6 23 0

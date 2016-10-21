@@ -138,10 +138,10 @@ public class PlanetExplorer {
 	private void get_next_pos(Integer temp_x, Integer temp_y, String facing) throws PlanetExplorerException {
 		switch( facing )
 		{
-		case "N" : temp_y = (temp_y + 1) % y;
-		case "E" : temp_x = (temp_x + 1) % x;
-		case "S" : temp_y = (temp_y + y - 1) % y;
-		case "W" : temp_x = (temp_x + x -1 ) % x;
+		case "N" : temp_y = (temp_y + 1) % y; break;
+		case "E" : temp_x = (temp_x + 1) % x; break;
+		case "S" : temp_y = (temp_y + y - 1) % y; break;
+		case "W" : temp_x = (temp_x + x -1 ) % x; break;
 		}
 		throw new PlanetExplorerException();
 	}
