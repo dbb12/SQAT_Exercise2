@@ -113,7 +113,11 @@ public class TestPlanetExplorer {
 		assertEquals("(1,1,E)(0,2)",result);
 	}
 	
-	
+	public void test_executeCommand_command_ffrflbblf_face_E() throws PlanetExplorerException {
+		PlanetExplorer explorer = new PlanetExplorer(3,3,"(0,2)");
+		String result = explorer.executeCommand("ffrflbblf");
+		assertEquals("(1,2,E)(0,2)",result);
+	}
 	
 	
 	

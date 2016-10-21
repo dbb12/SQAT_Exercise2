@@ -204,3 +204,11 @@ UnitTestSessionAction 1477056411950 TestPlanetExplorer.java FAIL
 UnitTestCaseAction 1477056457969 TestPlanetExplorer.java OK
 UnitTestSessionAction 1477056457969 TestPlanetExplorer.java OK
 EditAction 1477056506263 PlanetExplorer.java 5989 5 21 0
+UnitTestCaseAction 1477056508428 TestPlanetExplorer.java OK
+UnitTestSessionAction 1477056508428 TestPlanetExplorer.java OK
+RefactoringAction 1477056518170 TestPlanetExplorer.java ADD void test_executeCommand_command_ffrf_face_E()/2 METHOD
+RefactoringAction 1477056524868 TestPlanetExplorer.java RENAME test_executeCommand_command_ffrf_face_E()/2=>void test_executeCommand_command_ffrfl_face_E() METHOD
+RefactoringAction 1477056530021 TestPlanetExplorer.java RENAME test_executeCommand_command_ffrfl_face_E()=>void test_executeCommand_command_ffrflbb_face_E() METHOD
+RefactoringAction 1477056532095 TestPlanetExplorer.java RENAME test_executeCommand_command_ffrflbb_face_E()=>void test_executeCommand_command_ffrflbbl_face_E() METHOD
+RefactoringAction 1477056534155 TestPlanetExplorer.java RENAME test_executeCommand_command_ffrflbbl_face_E()=>void test_executeCommand_command_ffrflbblf_face_E() METHOD
+EditAction 1477056544224 TestPlanetExplorer.java 5023 17 39 11
